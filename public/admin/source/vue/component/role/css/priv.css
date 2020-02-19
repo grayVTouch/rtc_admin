@@ -1,0 +1,12 @@
+.c-component {
+
+}
+
+.c-component .content {
+
+}
+
+.c-component .content .in form .c-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+}

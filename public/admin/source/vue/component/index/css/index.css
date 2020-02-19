@@ -1,0 +1,694 @@
+.component {
+
+}
+
+.component > .left , .component > .right {
+    height: 100%;
+    min-height: 600px;
+}
+
+.component > .left {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #464b56;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 2;
+}
+
+.component > .left > .in {
+    width: 220px;
+}
+
+.component > .right {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-left: 220px;
+    z-index: 1;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+.component > .right > .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+    padding-left: 220px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+.component > .right > .btm {
+    min-width: 1080px;
+    min-height: 100%;
+    background-color: #777d8a;
+}
+
+.component > .right > .btm:before {
+    display: block;
+    visibility: visible;
+    content: '';
+    height: 80px;
+}
+
+
+/*
+ * ****************
+ * 文档左边: top
+ * ****************
+ */
+.component > .left > .in > .top {
+
+}
+
+.component > .left > .in > .top .logo {
+    height: 50px;
+    line-height: 50px;
+    background-color: #525865;
+}
+
+.component > .left > .in > .top .logo .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    text-align: center;
+}
+
+.component > .left > .in > .top .logo .left .image {
+    width: 28px;
+    height: 28px;
+}
+
+.component > .left > .in > .top .logo .right {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    margin-left: 50px;
+}
+
+.component > .left > .in > .top .user {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.component > .left > .in > .top .user .top {
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.component > .left > .in > .top .user .top .image-container {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.component > .left > .in > .top .user .top .image-container .image {
+    width: 100%;
+    min-height: 100%;
+    vertical-align: top;
+}
+
+.component > .left > .in > .top .user .btm {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+/**
+ * *************
+ * 滑块
+ * *************
+ */
+.component > .left > .in > .top .block {
+    background-color:#3e4448;
+}
+
+.component > .left > .in > .top .block:hover .horizontal .in .line , .component > .left > .in > .top .block:hover .vertical .in .line {
+    background-color:#e7e7e7;
+}
+
+.component > .left > .in > .top .block>*  {
+    height:30px;
+    position:relative;
+    cursor:pointer;
+}
+
+.component > .left > .in > .top .block .horizontal {
+
+}
+
+.component > .left > .in > .top .block .vertical {
+
+}
+
+.component > .left > .in > .top .block .horizontal .in , .component > .left > .in > .top .block .vertical .in {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate3d(-50% , -50% , 0px);
+    -webkit-transform:translate3d(-50% , -50% , 0px);
+    -moz-transform:translate3d(-50% , -50% , 0px);
+    -ms-transform:translate3d(-50% , -50% , 0px);
+    -otransform:translate3d(-50% , -50% , 0px);
+}
+
+.component > .left > .in > .top .block .horizontal .in:after {
+    display:block;
+    content:'';
+    clear:both;
+}
+
+.component > .left > .in > .top .block .horizontal .in .line {
+    float:left;
+    width: 3px;
+    height: 12px;
+    margin-right:3px;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    background-color: #868686;
+}
+
+.component > .left > .in > .top .block .horizontal .in .line:nth-last-of-type(1) {
+    margin-right: 0;
+}
+
+.component > .left > .in > .top .block .vertical {
+    width:50px;
+    margin: 0;
+}
+
+.component > .left > .in > .top .block .vertical .in {
+
+}
+
+.component > .left > .in > .top .block .vertical .in .line {
+    background-color: #868686;
+    margin-bottom:3px;
+    width:12px;
+    height:2px;
+    transition:all 0.3s linear;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -ms-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+}
+
+.component > .left > .in > .top .block .vertical .in .line:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+
+/*
+ * ****************
+ * 文档左边: mid
+ * ****************
+ */
+.component > .left > .in > .mid {
+    overflow: hidden;
+    overflow-y: auto;
+    min-height: 300px;
+}
+
+/*
+ * ****************
+ * 文档左边: btm
+ * ****************
+ */
+.component > .left > .in > .btm {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #525865;
+}
+
+/**
+ * *****************
+ * 文档右边，全局设置
+ * *****************
+ */
+.component > .right {
+
+}
+
+.component > .right > .top {
+    height: 80px;
+}
+
+.component > .right > .top > .c-top {
+    height: 50px;
+    line-height: 50px;
+    background-color: #5c626d;
+}
+
+.component > .right > .top > .c-btm {
+    height: 30px;
+}
+
+.component > .right > .btm {
+
+}
+
+
+/**
+ * *********************
+ * 文档右边，顶部上边
+ * *********************
+ */
+.component > .right > .top > .c-top {
+
+}
+
+.component > .right > .top > .c-top:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.component > .right > .top > .c-top > * {
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+.component > .right > .top > .c-top > .left {
+    float: left;
+}
+
+.component > .right > .top > .c-top > .right {
+    float: right;
+}
+
+.component > .right > .top > .c-top > .left:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.component > .right > .top > .c-top > .left > * {
+    float: left;
+    position: relative;
+    text-align: center;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.component > .right > .top > .c-top > .left > *:hover {
+    background-color: #797d84;
+}
+
+
+.component > .right > .top > .c-top > .left > * .image {
+    width: 28px;
+    height: 28px;
+}
+
+.component > .right > .top > .c-top > .left > *:after {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 40%;
+    background-color: #757f90;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.component > .right > .top > .c-top > .left > *:nth-last-of-type(1)::after {
+    display: none;
+}
+
+.component > .right > .top > .c-top > .right {
+
+}
+
+.component > .right > .top > .c-top > .right:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.component > .right > .top > .c-top > .right > * {
+    float: left;
+    height: 100%;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+.component > .right > .top > .c-top > .right > .user {
+    position: relative;
+}
+
+.component > .right > .top > .c-top > .right > .user:hover .ctrl {
+    background-color: #797d84;
+}
+
+.component > .right > .top > .c-top > .right > .user .ctrl {
+    padding: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.component > .right > .top > .c-top > .right > .user .ctrl:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.component > .right > .top > .c-top > .right > .user .ctrl > * {
+    float: left;
+    height: 50px;
+    padding-right: 10px;
+    line-height: 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+.component > .right > .top > .c-top > .right > .user .ctrl > *:nth-last-of-type(1) {
+    padding-right: 0;
+}
+
+.component > .right > .top > .c-top > .right > .user .ctrl .avatar {
+    text-align: center;
+}
+
+.component > .right > .top > .c-top > .right > .user .ctrl .avatar .image-container {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.component > .right > .top > .c-top > .right > .user .ctrl .avatar .image {
+    width: 100%;
+    min-height: 100%;
+    vertical-align: top;
+}
+
+.component > .right > .top > .c-top > .right > .user .ctrl .username {
+    color: white;
+}
+
+.component > .right > .top > .c-top > .right > .user .functions {
+    background-color: #484e58;
+    padding: 10px;
+    position: absolute;
+    bottom: -10px;
+    opacity: 0;
+    right: 0;
+    z-index: 10;
+    width: 160px;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+}
+
+.component > .right > .top > .c-top > .right > .user .functions .function {
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.component > .right > .top > .c-top > .right > .user .functions .function:hover {
+    background-color: #626a77;
+}
+
+.component > .right > .top > .c-top > .right > .user .functions .function:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.component > .right > .top > .c-top > .right > .user .functions .function > * {
+    height: 100%;
+}
+
+.component > .right > .top > .c-top > .right > .user .functions .function .left {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+}
+
+.component > .right > .top > .c-top > .right > .user .functions .function .left .image {
+    width: 28px;
+    height: 28px;
+}
+
+.component > .right > .top > .c-top > .right > .user .functions .function .right {
+    color: white;
+    margin-left: 50px;
+}
+
+.component > .right > .top > .c-top > .right > .notification {
+    width: 50px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.component > .right > .top > .c-top > .right > .notification:hover {
+    background-color: #797d84;
+}
+
+.component > .right > .top > .c-top > .right > .notification > .in {
+    position: relative;
+    height: 100%;
+}
+
+.component > .right > .top > .c-top > .right > .notification > .in .image-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.component > .right > .top > .c-top > .right > .notification > .in .image-container .image {
+    width: 100%;
+    min-height: 100%;
+    vertical-align: top;
+}
+
+.component > .right > .top > .c-top > .right > .notification > .in .text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    line-height: normal;
+    padding: 0 5px;
+    background-color: red;
+    overflow: hidden;
+    border-radius: 3px;;
+    z-index: 10;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+
+/**
+ * **************************
+ * 文档右边：底部
+ * **************************
+ */
+.component > .right > .btm > .dynamic {
+
+}
+
+.component > .right > .btm > .dynamic > .in {
+
+}
+
+/**
+ * ********************
+ * 抽屉
+ * ********************
+ */
+.component > .slidebar-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.slidebar > .con {
+    background-color:rgba(0, 0, 0, 0.8);
+}
+
+.slidebar > .con > .in {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    color: #fff;
+    padding: 15px;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+}
+
+.slidebar > .con > .in::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
+
+.slidebar > .con > .in .lines .line {
+    line-height: 40px;
+    height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition:all 0.3s linear;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -ms-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+}
+
+.slidebar > .con > .in .lines .line:hover {
+    background-color: #5d5d5d;
+}
+
+.slidebar > .con > .in .lines .line:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.slidebar > .con > .in .lines .line > * {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+.slidebar > .con > .in .lines .line .left {
+    float: left;
+}
+
+.slidebar > .con > .in .lines .line .right {
+    float: right;
+}
+
+.slidebar > .con > .in .lines .line .left:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.slidebar > .con > .in .lines .line .left > * {
+    float: left;
+    margin-right: 12px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+.slidebar > .con > .in .lines .line .left > *:nth-last-of-type(1) {
+    margin-right: 0;
+}
+
+.slidebar > .con > .in .lines .line .left .ico {
+    width: 24px;
+}
+
+.slidebar > .con > .in .lines .line .left .ico .image {
+    width: 24px;
+    height: 24px;
+}
+
+.slidebar > .con > .in .lines .line .left .text {
+    font-size: 13px;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.slidebar > .con > .in > .loading {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.slidebar > .con > .in > .no-more {
+    padding: 10px 0;
+}

@@ -1,0 +1,7 @@
+.c-component .content .in form .block {
+    margin-bottom: 20px;
+}
+
+.c-component .content .in form .block:nth-last-of-type(1) {
+    margin-bottom: 0;
+}

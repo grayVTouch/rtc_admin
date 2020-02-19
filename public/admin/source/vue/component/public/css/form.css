@@ -1,0 +1,41 @@
+.c-component {
+
+}
+
+.c-component .content {
+
+}
+
+.c-component .content > .in {
+
+}
+
+.c-component .content > .in > form {
+
+}
+
+.c-component .content > .in > form > * {
+    margin-bottom: 12px;
+}
+
+.c-component .content > .in > form > *:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+
+
+/**
+ * ********************
+ * 选项切换中需要用到
+ * ********************
+ */
+.c-component .content > .in > form .options > * {
+
+}
+
+.c-component .content > .in > form .options > * > * {
+    margin-bottom: 20px;
+}
+
+.c-component .content > .in > form .options > * > *:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
