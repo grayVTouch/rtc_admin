@@ -1,28 +1,35 @@
-/**
- * ******************
- * 模块全局设置
- * ******************
- */
 .c-component {
-    position: relative;
-    padding-top: 0;
 }
-.c-component > * {
-    padding: 0 20px;
+.c-component .content {
 }
+.c-component .content > .in {
+}
+.c-component .content > .in > form {
+}
+.c-component .content > .in > form > * {
+    margin-bottom: 12px;
+}
+.c-component .content > .in > form > *:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+
 
 /**
- * ******************
- * 模块内容
- * ******************
+ * ********************
+ * 选项切换中需要用到
+ * ********************
  */
-.c-component > .content {
-    padding-bottom: 20px;
+.c-component .content > .in > form .options > * {
 }
-.c-component > .content > .in {
-    padding: 20px;
-    background-color: white;
+.c-component .content > .in > form .options > * > * {
+    margin-bottom: 20px;
 }
-
-
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vcHVibGljLmNzcz80YzJiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7O0VBSUU7QUFDRjtJQUNJLGtCQUFrQjtJQUNsQixjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxlQUFlO0FBQ25COztBQUVBOzs7O0VBSUU7QUFDRjtJQUNJLG9CQUFvQjtBQUN4QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtBQUMzQixDIiwiZmlsZSI6IjIyLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxyXG4gKiAqKioqKioqKioqKioqKioqKipcclxuICog5qih5Z2X5YWo5bGA6K6+572uXHJcbiAqICoqKioqKioqKioqKioqKioqKlxyXG4gKi9cbi5jLWNvbXBvbmVudCB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICBwYWRkaW5nLXRvcDogMDtcbn1cbi5jLWNvbXBvbmVudCA+ICoge1xyXG4gICAgcGFkZGluZzogMCAyMHB4O1xufVxyXG5cclxuLyoqXHJcbiAqICoqKioqKioqKioqKioqKioqKlxyXG4gKiDmqKHlnZflhoXlrrlcclxuICogKioqKioqKioqKioqKioqKioqXHJcbiAqL1xuLmMtY29tcG9uZW50ID4gLmNvbnRlbnQge1xyXG4gICAgcGFkZGluZy1ib3R0b206IDIwcHg7XG59XG4uYy1jb21wb25lbnQgPiAuY29udGVudCA+IC5pbiB7XHJcbiAgICBwYWRkaW5nOiAyMHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59Il0sInNvdXJjZVJvb3QiOiIifQ==*/
+.c-component .content > .in > form .options > * > *:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+.c-component .content .in form .block[data-v-507faa0e] {
+    margin-bottom: 20px;
+}
+.c-component .content .in form .block[data-v-507faa0e]:nth-last-of-type(1) {
+    margin-bottom: 0;
+}

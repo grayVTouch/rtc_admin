@@ -11,8 +11,8 @@ import deleteUnfocus from '../../plugin/UploadImage/image/delete_unfocus.png';
 
 // const host = 'http://admins.gca.cool';
 // const host = 'http://admin.bonuswallet.org';
-// const host = 'http://admin.hichatvip.com';
-const host = 'http://adm.hichatvip.com';
+const host = 'http://admin.hichatvip.com';
+// const host = 'http://adm.hichatvip.com';
 // const host = 'http://admin.rtc.com:10002';
 const api = `${host}/api`;
 const admin = `${api}/admin`;
