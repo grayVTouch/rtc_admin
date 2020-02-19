@@ -181,13 +181,13 @@ export default {
                 console.log(res);
                 res.forEach((v) => {
                     categories.push(v.time_point);
-                    series[0].data.push(v.user_count);
-                    series[1].data.push(v.client_count);
+                    series[0].data.push(parseInt(v.user_count));
+                    series[1].data.push(parseInt(v.client_count));
                 });
-                console.log(categories , series);
+                // console.log(categories , series);
                 this.pain({
-                    dom: this.$refs.year,
-                    chartType: 'area',
+                    dom: this.$refs['statistics-user-activity-log'],
+                    // chartType: '',
                     title: this.date + ' 统计资料',
                     categories,
                     xTitle: '时间',

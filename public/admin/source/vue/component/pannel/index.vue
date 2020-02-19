@@ -148,7 +148,7 @@
                             <div class="right"></div>
                         </div>
                         <div class="con">
-                            <div class="chart-container" ref="year"></div>
+                            <div class="chart-container" ref="statistics-user-activity-log"></div>
                             <v-loading ref="statistics-user-activity-log-loading"></v-loading>
                         </div>
                     </div>
