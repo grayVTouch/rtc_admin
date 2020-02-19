@@ -190,7 +190,7 @@ export default {
                     chartType: 'area',
                     title: this.date + ' 统计资料',
                     categories,
-                    xTitle: '日期',
+                    xTitle: '时间',
                     yTitle: '数量',
                     plotLine: 100,
                     series,
