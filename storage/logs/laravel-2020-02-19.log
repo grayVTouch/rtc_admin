@@ -1,0 +1,38 @@
+[2020-02-19 10:42:51] local.ERROR: include(D:\web\front\rtc_admin\vendor\composer/../facade/ignition/src/Middleware/AddGitInformation.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(D:\\web\\front\tc_admin\\vendor\\composer/../facade/ignition/src/Middleware/AddGitInformation.php): failed to open stream: No such file or directory at D:\\web\\front\tc_admin\\vendor\\composer\\ClassLoader.php:444)
+[stacktrace]
+#0 D:\\web\\front\tc_admin\\vendor\\composer\\ClassLoader.php(444): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(D:\\\\web\\\\...', 'D:\\\\web\\\\front\\\t...', 444, Array)
+#1 D:\\web\\front\tc_admin\\vendor\\composer\\ClassLoader.php(444): include()
+#2 D:\\web\\front\tc_admin\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('D:\\\\web\\\\front\\\t...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Facade\\\\Ignition...')
+#4 D:\\web\\front\tc_admin\\vendor\\facade\\ignition\\src\\IgnitionServiceProvider.php(332): spl_autoload_call('Facade\\\\Ignition...')
+#5 D:\\web\\front\tc_admin\\vendor\\facade\\ignition\\src\\IgnitionServiceProvider.php(111): Facade\\Ignition\\IgnitionServiceProvider->registerBuiltInMiddleware()
+#6 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(608): Facade\\Ignition\\IgnitionServiceProvider->register()
+#7 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Facade\\Ignition\\IgnitionServiceProvider))
+#8 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(585): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#9 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#10 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(211): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#11 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#12 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#13 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#14 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#15 {main}
+"} 
+[2020-02-19 10:42:56] local.ERROR: include(D:\web\front\rtc_admin\vendor\composer/../facade/ignition/src/Middleware/AddGitInformation.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(D:\\web\\front\tc_admin\\vendor\\composer/../facade/ignition/src/Middleware/AddGitInformation.php): failed to open stream: No such file or directory at D:\\web\\front\tc_admin\\vendor\\composer\\ClassLoader.php:444)
+[stacktrace]
+#0 D:\\web\\front\tc_admin\\vendor\\composer\\ClassLoader.php(444): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(D:\\\\web\\\\...', 'D:\\\\web\\\\front\\\t...', 444, Array)
+#1 D:\\web\\front\tc_admin\\vendor\\composer\\ClassLoader.php(444): include()
+#2 D:\\web\\front\tc_admin\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('D:\\\\web\\\\front\\\t...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Facade\\\\Ignition...')
+#4 D:\\web\\front\tc_admin\\vendor\\facade\\ignition\\src\\IgnitionServiceProvider.php(332): spl_autoload_call('Facade\\\\Ignition...')
+#5 D:\\web\\front\tc_admin\\vendor\\facade\\ignition\\src\\IgnitionServiceProvider.php(111): Facade\\Ignition\\IgnitionServiceProvider->registerBuiltInMiddleware()
+#6 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(608): Facade\\Ignition\\IgnitionServiceProvider->register()
+#7 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Facade\\Ignition\\IgnitionServiceProvider))
+#8 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(585): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#9 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#10 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(211): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#11 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#12 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#13 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#14 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#15 {main}
+"} 
