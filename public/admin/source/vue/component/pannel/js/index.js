@@ -178,7 +178,7 @@ export default {
                         data: []
                     }
                 ];
-                console.log(res);
+                // console.log(res);
                 res.forEach((v) => {
                     categories.push(v.time_point);
                     series[0].data.push(parseInt(v.user_count));

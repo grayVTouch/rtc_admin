@@ -30,7 +30,7 @@
                         </div>
 
                         <div class="card">
-                            <div class="left"><img src="./image/car.png" class="image"></div>
+                            <div class="left"><img src="./image/group.png" class="image"></div>
                             <div class="right">
                                 <div class="top">新增群组</div>
                                 <div class="btm">
@@ -62,7 +62,7 @@
                         </div>
 
                         <div class="card-for-total">
-                            <div class="left"><img src="./image/admin_user.png" class="image"></div>
+                            <div class="left"><img src="./image/group.png" class="image"></div>
                             <div class="right">
                                 <div class="top">群组数</div>
                                 <div class="btm">{{ info.group.total }}</div>

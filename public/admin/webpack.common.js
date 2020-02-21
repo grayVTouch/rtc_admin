@@ -13,7 +13,7 @@ module.exports = {
     entry: {
         // babel-polyfill，在 ie 环境下，vuex 需要用到！
         // 相关文档请看 babel 官方文档
-        app_v5: ['@babel/polyfill' , './source/app.js']
+        app_v6: ['@babel/polyfill' , './source/app.js']
     },
     plugins: [
         new CleanWebpackPlugin(),
