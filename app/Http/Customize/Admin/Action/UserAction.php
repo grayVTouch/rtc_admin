@@ -64,8 +64,8 @@ class UserAction extends Action
             'sex' => 'required' ,
             'is_temp' => 'required' ,
             'is_system' => 'required' ,
-            'area_code' => 'required' ,
-            'phone' => 'required' ,
+//            'area_code' => 'required' ,
+//            'phone' => 'required' ,
         ]);
         if ($validator->fails()) {
             return self::formError($validator);

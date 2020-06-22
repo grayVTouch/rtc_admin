@@ -65,7 +65,7 @@
                                 区号：<input type="text" v-model="form.area_code" class="form-text">
                                 &nbsp;&nbsp;
                                 手机号码：<input type="text" v-model="form.phone" class="form-text">
-                                <span class="necessary">*</span>
+                                <span class="necessary"></span>
                                 <span class="tip">请输入正确的11位手机号码</span>
                                 <span class="msg"></span>
                             </td>
