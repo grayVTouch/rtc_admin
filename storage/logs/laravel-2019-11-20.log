@@ -1,580 +1,0 @@
-[2019-11-20 05:42:02] local.ERROR: SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
- (SQL: select * from `rtc_admin_token` where `token` = 152p54cRn77NSC79u5R1z5T63siD9U6ndP9Q09cr8E5na8x92cVRT5KIJ00Pn9d77k5pqOy46aX395415580X59KgLYVY39v73B7pBvi0J7wS4w63yoA6y7278426N1M74qzo9l4610B5jUv1646outhMU9A14486745v57vm32r1KTybiz4279U63A3a09Pv4179r40cWvw46Aim0f07RaT7l72b5CQ1693394y3j012A3J061ym4vc5E324sh limit 1) null 
-[2019-11-20 06:26:15] local.ERROR: Argument 3 passed to App\Http\Customize\Admin\Model\RoleModel::list() must be of the type integer, string given, called in D:\web\front\rtc_admin\app\Http\Customize\Admin\Action\RoleAction.php on line 28 {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Argument 3 passed to App\\Http\\Customize\\Admin\\Model\\RoleModel::list() must be of the type integer, string given, called in D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php on line 28 at D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Model\\RoleModel.php:41)
-[stacktrace]
-#0 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php(28): App\\Http\\Customize\\Admin\\Model\\RoleModel::list(Array, Array, 'undefined')
-#1 D:\\web\\front\tc_admin\\app\\Http\\Controllers\\Admin\\Role.php(25): App\\Http\\Customize\\Admin\\Action\\RoleAction::list(Object(Illuminate\\Http\\Request), Array)
-#2 [internal function]: App\\Http\\Controllers\\Admin\\Role->list()
-#3 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
-#4 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('list', Array)
-#5 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\Role), 'list')
-#6 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
-#7 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
-#8 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
-#9 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#10 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#11 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#12 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#13 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#14 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#15 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#16 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#17 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#18 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
-#19 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#20 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#21 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#22 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#23 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#24 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#25 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
-#26 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#27 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#28 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#29 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#30 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#31 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#32 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#33 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#34 D:\\web\\front\tc_admin\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#35 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#36 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#37 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#38 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#39 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#40 {main}
-"} 
-[2019-11-20 06:27:06] local.ERROR: Argument 3 passed to App\Http\Customize\Admin\Model\RoleModel::list() must be of the type integer, string given, called in D:\web\front\rtc_admin\app\Http\Customize\Admin\Action\RoleAction.php on line 29 {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Argument 3 passed to App\\Http\\Customize\\Admin\\Model\\RoleModel::list() must be of the type integer, string given, called in D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php on line 29 at D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Model\\RoleModel.php:41)
-[stacktrace]
-#0 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php(29): App\\Http\\Customize\\Admin\\Model\\RoleModel::list(Array, Array, 'undefined')
-#1 D:\\web\\front\tc_admin\\app\\Http\\Controllers\\Admin\\Role.php(25): App\\Http\\Customize\\Admin\\Action\\RoleAction::list(Object(Illuminate\\Http\\Request), Array)
-#2 [internal function]: App\\Http\\Controllers\\Admin\\Role->list()
-#3 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
-#4 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('list', Array)
-#5 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\Role), 'list')
-#6 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
-#7 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
-#8 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
-#9 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#10 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#11 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#12 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#13 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#14 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#15 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#16 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#17 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#18 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
-#19 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#20 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#21 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#22 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#23 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#24 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#25 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
-#26 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#27 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#28 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#29 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#30 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#31 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#32 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#33 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#34 D:\\web\\front\tc_admin\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#35 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#36 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#37 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#38 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#39 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#40 {main}
-"} 
-[2019-11-20 06:28:18] local.ERROR: Argument 3 passed to App\Http\Customize\Admin\Model\RoleModel::list() must be of the type integer, string given, called in D:\web\front\rtc_admin\app\Http\Customize\Admin\Action\RoleAction.php on line 28 {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Argument 3 passed to App\\Http\\Customize\\Admin\\Model\\RoleModel::list() must be of the type integer, string given, called in D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php on line 28 at D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Model\\RoleModel.php:41)
-[stacktrace]
-#0 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php(28): App\\Http\\Customize\\Admin\\Model\\RoleModel::list(Array, Array, 'undefined')
-#1 D:\\web\\front\tc_admin\\app\\Http\\Controllers\\Admin\\Role.php(25): App\\Http\\Customize\\Admin\\Action\\RoleAction::list(Object(Illuminate\\Http\\Request), Array)
-#2 [internal function]: App\\Http\\Controllers\\Admin\\Role->list()
-#3 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
-#4 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('list', Array)
-#5 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\Role), 'list')
-#6 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
-#7 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
-#8 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
-#9 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#10 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#11 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#12 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#13 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#14 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#15 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#16 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#17 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#18 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
-#19 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#20 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#21 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#22 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#23 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#24 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#25 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
-#26 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#27 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#28 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#29 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#30 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#31 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#32 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#33 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#34 D:\\web\\front\tc_admin\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#35 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#36 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#37 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#38 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#39 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#40 {main}
-"} 
-[2019-11-20 06:35:06] local.ERROR: Argument 1 passed to App\Http\Customize\Admin\Model\Model::delById() must be of the type integer, array given, called in D:\web\front\rtc_admin\app\Http\Customize\Admin\Action\RoleAction.php on line 44 {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Argument 1 passed to App\\Http\\Customize\\Admin\\Model\\Model::delById() must be of the type integer, array given, called in D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php on line 44 at D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Model\\Model.php:75)
-[stacktrace]
-#0 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php(44): App\\Http\\Customize\\Admin\\Model\\Model::delById(Array)
-#1 D:\\web\\front\tc_admin\\app\\Http\\Controllers\\Admin\\Role.php(37): App\\Http\\Customize\\Admin\\Action\\RoleAction::del(Object(Illuminate\\Http\\Request), Array)
-#2 [internal function]: App\\Http\\Controllers\\Admin\\Role->del()
-#3 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
-#4 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('del', Array)
-#5 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\Role), 'del')
-#6 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
-#7 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
-#8 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
-#9 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#10 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#11 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#12 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#13 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#14 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#15 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#16 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#17 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#18 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
-#19 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#20 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#21 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#22 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#23 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#24 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#25 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
-#26 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#27 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#28 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#29 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#30 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#31 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#32 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#33 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#34 D:\\web\\front\tc_admin\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#35 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#36 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#37 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#38 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#39 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#40 {main}
-"} 
-[2019-11-20 06:37:45] local.ERROR: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'weight' at row 1 (SQL: insert into `rtc_role` (`name`, `weight`) values (a, )) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'weight' at row 1 (SQL: insert into `rtc_role` (`name`, `weight`) values (a, )) at D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:665)
-[stacktrace]
-#0 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(625): Illuminate\\Database\\Connection->runQueryCallback('insert into `rt...', Array, Object(Closure))
-#1 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(460): Illuminate\\Database\\Connection->run('insert into `rt...', Array, Object(Closure))
-#2 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(412): Illuminate\\Database\\Connection->statement('insert into `rt...', Array)
-#3 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `rt...', Array)
-#4 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2670): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `rt...', Array, NULL)
-#5 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1350): Illuminate\\Database\\Query\\Builder->insertGetId(Array)
-#6 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
-#7 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1618): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'insertGetId', Array)
-#8 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1630): Illuminate\\Database\\Eloquent\\Model->__call('insertGetId', Array)
-#9 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php(77): Illuminate\\Database\\Eloquent\\Model::__callStatic('insertGetId', Array)
-#10 D:\\web\\front\tc_admin\\app\\Http\\Controllers\\Admin\\Role.php(64): App\\Http\\Customize\\Admin\\Action\\RoleAction::add(Object(Illuminate\\Http\\Request), Array)
-#11 [internal function]: App\\Http\\Controllers\\Admin\\Role->add()
-#12 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
-#13 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('add', Array)
-#14 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\Role), 'add')
-#15 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
-#16 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
-#17 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
-#18 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#19 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#20 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#21 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#22 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#23 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#24 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#25 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#26 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#27 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
-#28 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#29 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#30 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#31 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#32 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#33 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#34 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
-#35 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#36 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#37 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#38 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#39 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#40 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#41 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#42 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#43 D:\\web\\front\tc_admin\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#44 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#45 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#46 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#47 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#48 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#49 {main}
-
-[previous exception] [object] (PDOException(code: HY000): SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'weight' at row 1 at D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:459)
-[stacktrace]
-#0 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): PDOStatement->execute()
-#1 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(658): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('insert into `rt...', Array)
-#2 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(625): Illuminate\\Database\\Connection->runQueryCallback('insert into `rt...', Array, Object(Closure))
-#3 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(460): Illuminate\\Database\\Connection->run('insert into `rt...', Array, Object(Closure))
-#4 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(412): Illuminate\\Database\\Connection->statement('insert into `rt...', Array)
-#5 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `rt...', Array)
-#6 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2670): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `rt...', Array, NULL)
-#7 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1350): Illuminate\\Database\\Query\\Builder->insertGetId(Array)
-#8 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
-#9 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1618): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'insertGetId', Array)
-#10 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1630): Illuminate\\Database\\Eloquent\\Model->__call('insertGetId', Array)
-#11 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php(77): Illuminate\\Database\\Eloquent\\Model::__callStatic('insertGetId', Array)
-#12 D:\\web\\front\tc_admin\\app\\Http\\Controllers\\Admin\\Role.php(64): App\\Http\\Customize\\Admin\\Action\\RoleAction::add(Object(Illuminate\\Http\\Request), Array)
-#13 [internal function]: App\\Http\\Controllers\\Admin\\Role->add()
-#14 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
-#15 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('add', Array)
-#16 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\Role), 'add')
-#17 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
-#18 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
-#19 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
-#20 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#21 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#22 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#23 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#24 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#25 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#26 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#27 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#28 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#29 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
-#30 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#31 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#32 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#33 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#34 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#35 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#36 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
-#37 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#38 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#39 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#40 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#41 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#42 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#43 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#44 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#45 D:\\web\\front\tc_admin\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#46 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#47 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#48 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#49 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#50 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#51 {main}
-"} 
-[2019-11-20 07:47:09] local.ERROR: Argument 2 passed to Core\Lib\Category::childrens() must be of the type array, object given, called in D:\web\front\rtc_admin\app\Http\Customize\Admin\Action\RoleAction.php on line 116 {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Argument 2 passed to Core\\Lib\\Category::childrens() must be of the type array, object given, called in D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php on line 116 at D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Plugin\\extra\\core\\Lib\\Category.php:101)
-[stacktrace]
-#0 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php(116): Core\\Lib\\Category::childrens(0, Object(Illuminate\\Database\\Eloquent\\Collection), Array, false, true)
-#1 D:\\web\\front\tc_admin\\app\\Http\\Controllers\\Admin\\Role.php(88): App\\Http\\Customize\\Admin\\Action\\RoleAction::priv(Object(Illuminate\\Http\\Request), Array)
-#2 [internal function]: App\\Http\\Controllers\\Admin\\Role->priv()
-#3 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
-#4 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('priv', Array)
-#5 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\Role), 'priv')
-#6 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
-#7 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
-#8 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
-#9 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#10 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#11 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#12 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#13 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#14 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#15 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#16 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#17 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#18 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
-#19 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#20 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#21 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#22 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#23 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#24 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#25 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
-#26 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#27 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#28 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#29 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#30 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#31 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#32 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#33 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#34 D:\\web\\front\tc_admin\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#35 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#36 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#37 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#38 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#39 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#40 {main}
-"} 
-[2019-11-20 07:47:17] local.ERROR: Argument 2 passed to Core\Lib\Category::childrens() must be of the type array, object given, called in D:\web\front\rtc_admin\app\Http\Customize\Admin\Action\RoleAction.php on line 116 {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Argument 2 passed to Core\\Lib\\Category::childrens() must be of the type array, object given, called in D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php on line 116 at D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Plugin\\extra\\core\\Lib\\Category.php:101)
-[stacktrace]
-#0 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\RoleAction.php(116): Core\\Lib\\Category::childrens(0, Object(Illuminate\\Database\\Eloquent\\Collection), Array, false, true)
-#1 D:\\web\\front\tc_admin\\app\\Http\\Controllers\\Admin\\Role.php(88): App\\Http\\Customize\\Admin\\Action\\RoleAction::priv(Object(Illuminate\\Http\\Request), Array)
-#2 [internal function]: App\\Http\\Controllers\\Admin\\Role->priv()
-#3 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
-#4 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('priv', Array)
-#5 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\Role), 'priv')
-#6 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
-#7 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
-#8 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
-#9 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#10 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#11 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#12 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#13 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#14 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#15 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#16 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#17 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#18 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
-#19 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#20 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#21 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#22 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#23 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#24 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#25 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
-#26 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#27 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#28 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#29 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#30 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#31 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#32 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#33 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#34 D:\\web\\front\tc_admin\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#35 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#36 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#37 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#38 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#39 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#40 {main}
-"} 
-[2019-11-20 08:56:47] local.ERROR: æœªæ‰¾åˆ° business.role å¯¹åº”é”®å€¼ {"exception":"[object] (Exception(code: 0): æœªæ‰¾åˆ° business.role å¯¹åº”é”®å€¼ at D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Plugin\\extra\\common\\lib.php:66)
-[stacktrace]
-#0 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Plugin\\extra\\common\\lib.php(74): extra\\{closure}('D:/web/front/rt...', 'role', NULL)
-#1 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Plugin\\extra\\common\\lib.php(81): extra\\{closure}('D:/web/front/rt...', 'business', Array)
-#2 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Common\\common.php(17): extra\\config('D:/web/front/rt...', 'business.role', Array)
-#3 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Common\\common.php(73): Admin\\admin_config('business.role')
-#4 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Model\\UserModel.php(56): Admin\\get_value('business.role', 'user')
-#5 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Model\\UserModel.php(46): App\\Http\\Customize\\Admin\\Model\\UserModel::single(Object(stdClass))
-#6 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\UserAction.php(29): App\\Http\\Customize\\Admin\\Model\\UserModel::list(Array, Array, 20)
-#7 D:\\web\\front\tc_admin\\app\\Http\\Controllers\\Admin\\User.php(24): App\\Http\\Customize\\Admin\\Action\\UserAction::list(Object(Illuminate\\Http\\Request), Array)
-#8 [internal function]: App\\Http\\Controllers\\Admin\\User->list()
-#9 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
-#10 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('list', Array)
-#11 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\User), 'list')
-#12 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
-#13 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
-#14 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
-#15 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#16 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#17 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#18 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#19 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#20 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#21 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#22 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#23 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#24 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
-#25 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#26 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#27 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#28 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#29 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#30 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#31 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
-#32 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#33 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#34 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#35 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#36 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#37 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#38 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#39 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#40 D:\\web\\front\tc_admin\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#41 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#42 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#43 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#44 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#45 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#46 {main}
-"} 
-[2019-11-20 09:18:21] local.ERROR: Call to undefined relationship [user_option] on model [App\Http\Customize\Admin\Model\UserModel]. {"exception":"[object] (Illuminate\\Database\\Eloquent\\RelationNotFoundException(code: 0): Call to undefined relationship [user_option] on model [App\\Http\\Customize\\Admin\\Model\\UserModel]. at D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\RelationNotFoundException.php:34)
-[stacktrace]
-#0 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(588): Illuminate\\Database\\Eloquent\\RelationNotFoundException::make(Object(App\\Http\\Customize\\Admin\\Model\\UserModel), 'user_option')
-#1 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Relations\\Relation.php(90): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}()
-#2 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(590): Illuminate\\Database\\Eloquent\\Relations\\Relation::noConstraints(Object(Closure))
-#3 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(558): Illuminate\\Database\\Eloquent\\Builder->getRelation('user_option')
-#4 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(538): Illuminate\\Database\\Eloquent\\Builder->eagerLoadRelation(Array, 'user_option', Object(Closure))
-#5 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(506): Illuminate\\Database\\Eloquent\\Builder->eagerLoadRelations(Array)
-#6 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(705): Illuminate\\Database\\Eloquent\\Builder->get(Array)
-#7 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Model\\UserModel.php(48): Illuminate\\Database\\Eloquent\\Builder->paginate(20)
-#8 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\UserAction.php(29): App\\Http\\Customize\\Admin\\Model\\UserModel::list(Array, Array, 20)
-#9 D:\\web\\front\tc_admin\\app\\Http\\Controllers\\Admin\\User.php(24): App\\Http\\Customize\\Admin\\Action\\UserAction::list(Object(Illuminate\\Http\\Request), Array)
-#10 [internal function]: App\\Http\\Controllers\\Admin\\User->list()
-#11 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
-#12 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('list', Array)
-#13 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\User), 'list')
-#14 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
-#15 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
-#16 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
-#17 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#18 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#19 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#20 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#21 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#22 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#23 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#24 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#25 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#26 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
-#27 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#28 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#29 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#30 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#31 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#32 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#33 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
-#34 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#35 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#36 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#37 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#38 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#39 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#40 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#41 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#42 D:\\web\\front\tc_admin\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#43 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#44 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#45 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#46 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#47 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#48 {main}
-"} 
-[2019-11-20 09:19:27] local.ERROR: Call to undefined relationship [user_option] on model [App\Http\Customize\Admin\Model\UserModel]. {"exception":"[object] (Illuminate\\Database\\Eloquent\\RelationNotFoundException(code: 0): Call to undefined relationship [user_option] on model [App\\Http\\Customize\\Admin\\Model\\UserModel]. at D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\RelationNotFoundException.php:34)
-[stacktrace]
-#0 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(588): Illuminate\\Database\\Eloquent\\RelationNotFoundException::make(Object(App\\Http\\Customize\\Admin\\Model\\UserModel), 'user_option')
-#1 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Relations\\Relation.php(90): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}()
-#2 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(590): Illuminate\\Database\\Eloquent\\Relations\\Relation::noConstraints(Object(Closure))
-#3 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(558): Illuminate\\Database\\Eloquent\\Builder->getRelation('user_option')
-#4 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(538): Illuminate\\Database\\Eloquent\\Builder->eagerLoadRelation(Array, 'user_option', Object(Closure))
-#5 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(506): Illuminate\\Database\\Eloquent\\Builder->eagerLoadRelations(Array)
-#6 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(705): Illuminate\\Database\\Eloquent\\Builder->get(Array)
-#7 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Model\\UserModel.php(48): Illuminate\\Database\\Eloquent\\Builder->paginate(20)
-#8 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\UserAction.php(29): App\\Http\\Customize\\Admin\\Model\\UserModel::list(Array, Array, 20)
-#9 D:\\web\\front\tc_admin\\app\\Http\\Controllers\\Admin\\User.php(24): App\\Http\\Customize\\Admin\\Action\\UserAction::list(Object(Illuminate\\Http\\Request), Array)
-#10 [internal function]: App\\Http\\Controllers\\Admin\\User->list()
-#11 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
-#12 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('list', Array)
-#13 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\User), 'list')
-#14 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
-#15 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
-#16 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
-#17 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#18 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#19 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#20 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#21 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#22 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#23 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#24 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#25 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#26 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
-#27 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#28 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#29 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#30 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#31 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#32 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#33 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
-#34 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#35 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#36 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#37 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#38 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#39 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#40 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#41 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#42 D:\\web\\front\tc_admin\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#43 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#44 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#45 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#46 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#47 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#48 {main}
-"} 
-[2019-11-20 09:19:35] local.ERROR: Call to undefined relationship [user_option] on model [App\Http\Customize\Admin\Model\UserModel]. {"exception":"[object] (Illuminate\\Database\\Eloquent\\RelationNotFoundException(code: 0): Call to undefined relationship [user_option] on model [App\\Http\\Customize\\Admin\\Model\\UserModel]. at D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\RelationNotFoundException.php:34)
-[stacktrace]
-#0 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(588): Illuminate\\Database\\Eloquent\\RelationNotFoundException::make(Object(App\\Http\\Customize\\Admin\\Model\\UserModel), 'user_option')
-#1 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Relations\\Relation.php(90): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}()
-#2 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(590): Illuminate\\Database\\Eloquent\\Relations\\Relation::noConstraints(Object(Closure))
-#3 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(558): Illuminate\\Database\\Eloquent\\Builder->getRelation('user_option')
-#4 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(538): Illuminate\\Database\\Eloquent\\Builder->eagerLoadRelation(Array, 'user_option', Object(Closure))
-#5 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(506): Illuminate\\Database\\Eloquent\\Builder->eagerLoadRelations(Array)
-#6 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(705): Illuminate\\Database\\Eloquent\\Builder->get(Array)
-#7 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Model\\UserModel.php(48): Illuminate\\Database\\Eloquent\\Builder->paginate(20)
-#8 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Action\\UserAction.php(29): App\\Http\\Customize\\Admin\\Model\\UserModel::list(Array, Array, 20)
-#9 D:\\web\\front\tc_admin\\app\\Http\\Controllers\\Admin\\User.php(24): App\\Http\\Customize\\Admin\\Action\\UserAction::list(Object(Illuminate\\Http\\Request), Array)
-#10 [internal function]: App\\Http\\Controllers\\Admin\\User->list()
-#11 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
-#12 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('list', Array)
-#13 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Admin\\User), 'list')
-#14 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
-#15 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
-#16 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
-#17 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware.php(34): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#18 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\PermissionAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#19 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#20 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\UserAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#21 D:\\web\\front\tc_admin\\app\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#22 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Customize\\Admin\\Middleware\\CustomizeMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#23 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#24 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#25 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#26 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
-#27 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#28 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#29 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
-#30 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
-#31 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
-#32 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
-#33 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
-#34 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#35 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#36 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#37 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#38 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#39 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#40 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#41 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#42 D:\\web\\front\tc_admin\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#43 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
-#44 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
-#45 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
-#46 D:\\web\\front\tc_admin\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
-#47 D:\\web\\front\tc_admin\\public\\index.php(70): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
-#48 {main}
-"} 
