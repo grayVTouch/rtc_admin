@@ -7,7 +7,7 @@ module.exports = merge(common, {
     devServer: {
         // web 网站根目录
         contentBase: './compiled' ,
-        host: '0.0.0.0' ,
+        host: '127.0.0.1' ,
         port: 10003 ,
         index: 'app.html' ,
     }

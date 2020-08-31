@@ -59,7 +59,7 @@ class UserAction extends Action
     {
         $validator = Validator::make($param , [
             'id' => 'required' ,
-            'nickname' => 'required' ,
+//            'nickname' => 'required' ,
             'role' => 'required' ,
             'sex' => 'required' ,
             'is_temp' => 'required' ,
@@ -76,6 +76,11 @@ class UserAction extends Action
         }
         $param['password'] = empty($param['password']) ? $user->password : Hash::make($param['password']);
         $param['full_phone'] = "{$param['area_code']}{$param['phone']}}";
+        var_dump($param['birthday']);
+        exit;
+        $param['birthday'] = empty($param['birthday']) || $param['birthday'] === 'null' ? null : $param['birthday'];
+        var_dump($param['birthday']);
+
         UserModel::updateById($param['id'] , array_unit($param , [
             'username' ,
             'nickname' ,

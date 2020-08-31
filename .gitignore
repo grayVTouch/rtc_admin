@@ -5,6 +5,7 @@
 /storage/framework/cache
 storage/framework/sessions
 storage/framework/views
+public/admin/node_modules
 storage/logs
 .phpunit.result.cache
 Homestead.json

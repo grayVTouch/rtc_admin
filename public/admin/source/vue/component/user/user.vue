@@ -23,7 +23,7 @@
                             <td>昵称</td>
                             <td>
                                 <input type="text" v-model="form.nickname" class="form-text">
-                                <span class="necessary">*</span>
+                                <span class="necessary"></span>
                                 <span class="tip"></span>
                                 <span class="msg">{{ error.nickname }}</span>
                             </td>
@@ -43,7 +43,7 @@
                                 <i-radio-group v-model="form.role">
                                     <i-radio v-for="(v,k) in business.role" :key="k" :label="k">{{ v }}</i-radio>
                                 </i-radio-group>
-                                <span class="necessary">*</span>
+                                <span class="necessary"></span>
                                 <span class="tip"></span>
                                 <span class="msg">{{ error.role }}</span>
                             </td>
@@ -54,7 +54,7 @@
                                 <i-radio-group v-model="form.sex">
                                     <i-radio v-for="(v,k) in business.sex" :key="k" :label="k">{{ v }}</i-radio>
                                 </i-radio-group>
-                                <span class="necessary">*</span>
+                                <span class="necessary"></span>
                                 <span class="tip">默认：保密</span>
                                 <span class="msg">{{ error.sex }}</span>
                             </td>
@@ -112,7 +112,7 @@
                             <td>生日</td>
                             <td>
                                 <i-date-picker :value="form.birthday" type="date" placement="bottom-end" placeholder="请选择日期" style="width: 200px"></i-date-picker>
-                                <span class="necessary">*</span>
+                                <span class="necessary"></span>
                                 <span class="tip"></span>
                                 <span class="msg">{{ error.birthday }}</span>
                             </td>
@@ -121,7 +121,7 @@
                             <td>个性签名</td>
                             <td>
                                 <input type="text" v-model="form.signature" class="form-text">
-                                <span class="necessary">*</span>
+                                <span class="necessary"></span>
                                 <span class="tip"></span>
                                 <span class="msg">{{ error.signature }}</span>
                             </td>
@@ -132,7 +132,7 @@
                                 <i-radio-group v-model="form.is_system">
                                     <i-radio v-for="(v,k) in business.bool_int" :key="k" :label="k">{{ v }}</i-radio>
                                 </i-radio-group>
-                                <span class="necessary">*</span>
+                                <span class="necessary"></span>
                                 <span class="tip"></span>
                                 <span class="msg">{{ error.is_system }}</span>
                             </td>
