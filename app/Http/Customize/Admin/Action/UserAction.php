@@ -81,6 +81,7 @@ class UserAction extends Action
         UserModel::updateById($param['id'] , array_unit($param , [
             'username' ,
             'nickname' ,
+            'password' ,
             'role' ,
             'sex' ,
             'is_temp' ,
