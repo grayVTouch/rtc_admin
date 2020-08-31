@@ -1,0 +1,311 @@
+/**
+ * **********************
+ * 自动加载层级设置
+ * **********************
+ */
+.module-container .Loading {
+    z-index: 9;
+}
+/**
+ * ******************
+ * 模块全局设置
+ * ******************
+ */
+.c-component[data-v-7302642c] {
+    position: relative;
+    padding-top: 0;
+}
+.c-component > *[data-v-7302642c] {
+    padding: 0 20px;
+}
+
+/**
+ * ******************
+ * 模块内容
+ * ******************
+ */
+.c-component > .content[data-v-7302642c] {
+    padding-bottom: 20px;
+}
+.c-component > .content > .in[data-v-7302642c] {
+    padding: 20px;
+    background-color: white;
+}
+.c-component > .content > .in > *[data-v-7302642c] {
+    margin-bottom: 20px;
+}
+/**
+ * **************
+ * 欢迎信息
+ * **************
+ */
+.welcome[data-v-7302642c] {
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.welcome .top[data-v-7302642c] {
+    font-size: 16px;
+}
+.welcome .btm[data-v-7302642c] {
+    font-size: 12px;
+}
+
+/**
+ * **************
+ * 今日统计资料
+ * **************
+ */
+.today[data-v-7302642c] {
+}
+.today > .list[data-v-7302642c] {
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+.today > .list[data-v-7302642c]:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.today > .list > *[data-v-7302642c] {
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.history[data-v-7302642c] {
+}
+.history .list[data-v-7302642c] {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+.history .list[data-v-7302642c]:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.history .list > *[data-v-7302642c] {
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/**
+ * *************
+ * 卡片
+ * *************
+ */
+.card[data-v-7302642c] {
+    height: 114px;
+    line-height: 114px;
+    border: 1px solid #ccc;
+}
+.card[data-v-7302642c]:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.card > *[data-v-7302642c] {
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.card .left[data-v-7302642c] {
+    width: 50px;
+    text-align: center;
+    background-color: #fbfbfb;
+    border-right: 1px solid #ccc;
+}
+.card .left .image[data-v-7302642c] {
+    width: 24px;
+    height: 24px;
+}
+.card .right[data-v-7302642c] {
+    padding: 10px;
+    color: #555;
+    line-height: normal;
+}
+.card .right .top[data-v-7302642c] {
+    font-size: 14px;
+    border-bottom: 1px solid #dce4ec;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.card .right .btm[data-v-7302642c] {
+    font-size: 12px;
+}
+.card .right .btm .line[data-v-7302642c] {
+    margin-bottom: 6px;
+}
+.card .right .btm .line[data-v-7302642c]:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+.card .right .btm .line .image[data-v-7302642c] {
+    width: 20px;
+    height: 20px;
+}
+
+/**
+ * *************
+ * 卡片-总数
+ * *************
+ */
+.card-for-total[data-v-7302642c] {
+    height: 70px;
+    line-height: 70px;
+    border: 1px solid #ccc;
+}
+.card-for-total[data-v-7302642c]:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.card-for-total > *[data-v-7302642c] {
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.card-for-total .left[data-v-7302642c] {
+    width: 50px;
+    text-align: center;
+    background-color: #fbfbfb;
+    border-right: 1px solid #ccc;
+}
+.card-for-total .left .image[data-v-7302642c] {
+    width: 24px;
+    height: 24px;
+}
+.card-for-total .right[data-v-7302642c] {
+    padding: 10px;
+    color: #555;
+    line-height: normal;
+}
+.card-for-total .right > *[data-v-7302642c] {
+}
+.card-for-total .right .top[data-v-7302642c] {
+    font-size: 14px;
+    border-bottom: 1px solid #dce4ec;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.card-for-total .right .btm[data-v-7302642c] {
+    font-size: 12px;
+    font-weight: bold;
+}
+.card-for-total .right .btm .line[data-v-7302642c] {
+    margin-bottom: 6px;
+}
+.card-for-total .right .btm .line[data-v-7302642c]:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+.card-for-total .right .btm .line .image[data-v-7302642c] {
+    width: 20px;
+    height: 20px;
+}
+
+/**
+ * *********************
+ * 图表
+ * *********************
+ */
+.chart[data-v-7302642c] {
+}
+.chart > *[data-v-7302642c] {
+    margin-bottom: 20px;
+}
+.chart > *[data-v-7302642c]:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+.chart > .top[data-v-7302642c] {
+}
+.chart > .top[data-v-7302642c]:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.chart > .top > *[data-v-7302642c] {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.chart > .top > .month[data-v-7302642c] {
+    padding-right: 10px;
+}
+.chart > .top >.quarter[data-v-7302642c] {
+    padding-left: 10px;
+}
+
+
+/**
+ * *****************
+ 图表盒子
+ * *****************
+ */
+.chart-box[data-v-7302642c] {
+}
+.chart-box .run-title[data-v-7302642c] {
+}
+.chart-box .run-title .left[data-v-7302642c] {
+}
+.chart-box .run-title .left[data-v-7302642c]:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.chart-box .run-title .left > *[data-v-7302642c] {
+    float: left;
+    margin-right: 10px;
+}
+.chart-box .run-title .left > *[data-v-7302642c]:nth-last-of-type(1) {
+    margin-right: 0;
+}
+.chart-box .run-title .left .title .image[data-v-7302642c] {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.chart-box .run-title .left .month[data-v-7302642c] {
+}
+.chart-box > .con[data-v-7302642c] {
+    border: 1px solid #ccc;
+    position: relative;
+}
+.chart-box .con .chart-container[data-v-7302642c] {
+    height: 200px;
+}
+
+/**
+ * *****************
+ 系统信息
+ * *****************
+ */
+.system[data-v-7302642c] {
+}
+.system .table[data-v-7302642c] {
+    width: 100%;
+}
+.system .table tbody tr td[data-v-7302642c] {
+    height: 40px;
+    padding-left: 15px;
+}

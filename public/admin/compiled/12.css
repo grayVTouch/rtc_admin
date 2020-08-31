@@ -1,0 +1,34 @@
+/**
+ * 专门针对 WangEditor 做处理的 css
+ */
+.wang-editor {
+}
+.wang-editor * {
+    z-index: 0 !important;
+}
+/**
+ * ******************
+ * 模块全局设置
+ * ******************
+ */
+.c-component {
+    position: relative;
+    padding-top: 0;
+}
+.c-component > * {
+    padding: 0 20px;
+}
+
+/**
+ * ******************
+ * 模块内容
+ * ******************
+ */
+.c-component > .content {
+    padding-bottom: 20px;
+}
+.c-component > .content > .in {
+    padding: 20px;
+    background-color: white;
+}
+

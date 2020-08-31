@@ -1,0 +1,59 @@
+/**
+ * ******************
+ * 模块全局设置
+ * ******************
+ */
+.c-component {
+    position: relative;
+    padding-top: 0;
+}
+.c-component > * {
+    padding: 0 20px;
+}
+
+/**
+ * ******************
+ * 模块内容
+ * ******************
+ */
+.c-component > .content {
+    padding-bottom: 20px;
+}
+.c-component > .content > .in {
+    padding: 20px;
+    background-color: white;
+}
+.c-component > .content > .in > * {
+    margin-bottom: 12px;
+}
+.c-component > .content > .in > *:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+.c-component > .content > .in > .list {
+}
+.c-component > .content > .in > .list > * {
+    margin-bottom: 12px;
+}
+.c-component > .content > .in > .list > *:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+.c-component > .content > .in > .list > .page {
+    text-align: center;
+}
+
+/**
+ * 表格样式重置
+ */
+.c-component > .content > .in .line-tb {
+}
+.c-component > .content > .in .line-tb tbody tr td .ivu-checkbox-group label span:nth-of-type(2) {
+    display: none;
+}
+.line-tb[data-v-06adc068] {
+}
+.line-tb thead tr .th-name[data-v-06adc068] {
+    width: 100px;
+}
+.line-tb thead tr .th-opr[data-v-06adc068] {
+    width: 100px;
+}
